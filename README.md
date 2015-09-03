@@ -19,7 +19,7 @@ For this assignment, the object is to transform the page with JavaScript, alteri
 
 If you look at the HTML provided, you’ll see an image tag in the aside on line 14.  This is the image that displays on the right side.  You can show one of the menu item images by filling in the appropriate value for the src attribute.  That value comes from the corresponding “hidden” image in the menu list.
 
-#3 DOM Access Review
+# DOM Access Review
 Remembering the following functions and properties will help you navigate the DOM:
 
 - getElementById() - used to select a single element by its id attribute
