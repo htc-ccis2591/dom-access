@@ -1,3 +1,10 @@
+var content=document.querySelector("h2");
+var p = document.createElement("p");
+var pText = document.createTextNode("Click a menu item to view a picture.");
+p.appendChild(pText);
+content.appendChild(p);
+
+
 var imgs = document.querySelectorAll("#menu img");
 for (var i = 0; i < imgs.length; i++) 
 {
