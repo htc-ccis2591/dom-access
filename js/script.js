@@ -12,12 +12,6 @@ for (i = 0; i < images.length; i++) {
         path = img.getAttribute('src');
         aside.setAttribute('src', path);
         aside.removeAttribute('class');
-        
-
     }
-    
 }
-        var targetArea = document.getElementsById("menu");
-var p = document.createElement("p");
-var snippet = add.createTextNode('Click on the menu item to display picture');
-targetArea.appendChild(snippet);
+document.getElementById('text').innerHTML = "<p>Click on menu item to view picture</p>";
