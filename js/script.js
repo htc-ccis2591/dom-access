@@ -1,12 +1,23 @@
-var aside = document.getElementById('aside-img');
+var aside = document.getElementById('aside-image');
 var images = document.querySelectorAll("#menu img");
 
 for (i = 0; i < images.length; i++) {
-    heading = images[i];
-    heading.setAttribute("class", "hide");
+    image = images[i];
+    image.setAttribute("class", "hide");
+
+    text = image.previousElementSibling
+
+    text.onclick = function (pics) {
+        img = this.nextElementSibling;
+        path = img.getAttribute('src');
+        aside.setAttribute('src', path);
+        aside.removeAttribute('class');
+        
+
+    }
+    
 }
-images.onclick = function () {
-    pics = document.getElementsByTagName('aside');
-    p = document.createElement('images');
-    aside.appendChild(p);
-}
+        var targetArea = document.getElementsById("menu");
+var p = document.createElement("p");
+var snippet = add.createTextNode('Click on the menu item to display picture');
+targetArea.appendChild(snippet);
