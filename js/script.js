@@ -1,25 +1,22 @@
 
-function setImageVisible(id, visible) {
-    var img = document.getElementById(id);
-    img.style.visibility = (visible ? 'visible' : 'hidden');
+
+menuImgs = document.querySelectorAll("#menu img");
+imageLinks = document.getElementsByClassName("menu-item");
+
+
+for (i = 0; i < menuImgs.length; i++) {
+    imag = menuImgs[i];
+    imag.setAttribute("class", "hide");
+
+    imageLinks[i].addEventListener('click', setImageVisible, false);
 }
 
-document.getElementById("showImage").onclick = function() {
-    document.getElementById("theImage").style.visibility = "visible";
+//var  h3s = document.querySelectorAll("#menu h3");
+
+function setImageVisible() {
+var path = this.nextElementSibling.getAttribute("src");
+    img = document.getElementById("aside-image");
+    img.setAttribute("src",  path);
+    img.removeAttribute("class");
 }
 
-var  images = document.querySelectorAll("#menu img");
-
-for (i=0; i<Images.length; i++) {
-    oneImage = images[i]
-    oneImage.setAttribute("images/cappuccino.jpg", "hide");
-}
-
-#var  h3s = document.querySelectorAll("#menu h3");
-
-#for (i=0; i<h3s.length; i++) {
-    #oneHeading = h3s[i]
-    #oneHeading.setAttribute("class", "hide");
-}
-
-document.querySelectorAll("#menu img");
