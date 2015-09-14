@@ -14,4 +14,10 @@ for (i = 0; i < images.length; i++) {
         aside.removeAttribute('class');
     }
 }
-document.getElementById('text').innerHTML = "<p>Click on menu item to view picture</p>";
+
+var add_text = document.createElement("p");
+var text = document.createTextNode("Click on menu item to see picture");
+add_text.appendChild(text);
+
+var add = document.getElementById("menu");
+add.insertBefore(add_text, add.childNodes[2]); console.log(add);
