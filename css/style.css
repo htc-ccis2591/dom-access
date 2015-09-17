@@ -38,3 +38,8 @@ ul {
 li {
 	padding-bottom: .25em;
 }
+.hidden{
+position: absolute;
+    top:-9999px;
+    left: -9999px;
+}
