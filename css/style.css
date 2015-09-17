@@ -38,3 +38,5 @@ ul {
 li {
 	padding-bottom: .25em;
 }
+
+#theImage { visibility: hidden; }
