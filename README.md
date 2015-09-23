@@ -49,12 +49,22 @@ Use the index.html file as the DOM to answer the following questions.  Test out 
 
 1. Which JavaScript function is most appropriate to select the aside element on line 13, the getElementsByTagName() function or the getElementById() function?
 
+    getElementsByTagName();
+
 2. Which function is most appropriate to select the img element on line 14?
+
+    getElementByID();
 
 3. How would you select all of the items with the menu-item class?
 
+    getElementsByClassName();
+
 4. How would you select all of the list item elements?
 
+    getElementsByTagName('li');
+
 5. Assuming that you had a list item element, how would you get the menu-item that is inside the list item?  How would you get the image inside that list item?
+
+    var img = document.getElementsByTagName('li').FirstChild.src
 
 6. How would you select only the list item elements in the div under the Bakery Goods header?  (Hint: think about the answer to question 5.)
