@@ -1,9 +1,9 @@
 # DOM Access Assignment
 Completing this assignment depends on knowing:
 
-- how to set up an event handler or use the onClick function (Ch 2)
-- basic JavaScript to create variables, work with arrays, if/else statements and for loops (Ch 3)
-- methods for selecting and navigating the DOM Tree, adding and removing attributes, creating a new element and appending it to the DOM (Ch 4)
+- how to set up an event handler or use the onClick function 
+- basic JavaScript to create variables, work with arrays, if/else statements and for loops
+- methods for selecting and navigating the DOM Tree, adding and removing attributes, creating a new element and appending it to the DOM 
 
 ## GitHub Repository
 https://github.com/htc-ccis2591/dom-access
