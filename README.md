@@ -15,7 +15,7 @@ Open the web page in a browser.  You’ll see that it loads a page with an image
 
 In the spirit of progressive enhancement, the page may not be amazingly beautiful, but all the info is visible without any JavaScript.
 
-For this assignment, the object is to transform the page with JavaScript, altering the DOM with the techniques described in Chapter 4 of your textbook, so that when the page loads, all images are hidden.  Add text under the “Menu” heading to indicate that you can click on an item to see an image.  Then when an item is clicked,  such as the Cappuccino or the Latte, the corresponding image should show off to the side.
+For this assignment, the object is to transform the page with JavaScript, altering the DOM with the techniques discussed in class, so that when the page loads, all images are hidden.  Add text under the “Menu” heading to indicate that you can click on an item to see an image.  Then when an item is clicked,  such as the Cappuccino or the Latte, the corresponding image should show off to the side.
 
 If you look at the HTML provided, you’ll see an image tag in the aside on line 14.  This is the image that displays on the right side.  You can show one of the menu item images by filling in the appropriate value for the src attribute.  That value comes from the corresponding “hidden” image in the menu list.
 
@@ -37,7 +37,7 @@ for (int i = 0; i < paras.length; i++) {
 }
 ```
 
-You can also use array notation to access individual items.  Note:  Before using syntax like this, it is a good idea to first check that you actually got items back. (See Listing 4.3.4 in the text.)
+You can also use array notation to access individual items.  Note:  Before using syntax like this, it is a good idea to first check that you actually got items back. 
 
 ```
 para1 = paras[0];
@@ -45,7 +45,7 @@ para2 = paras[1];
 ```
 
 ## DOM Access Practice
-Use the index.html file as the DOM to answer the following questions.  Test out your answers by opening the page in the browser and using the JavaScript console to see if your answer is correct.
+Use the index.html file as the DOM to answer the following questions.  Put the answers in your pull-request comment.
 
 1. Which JavaScript function is most appropriate to select the aside element on line 13, the getElementsByTagName() function or the getElementById() function?
 
