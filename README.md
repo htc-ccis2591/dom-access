@@ -25,7 +25,7 @@ Remembering the following functions and properties will help you navigate the DO
 - getElementById() - used to select a single element by its id attribute
 - getElementsByTagName() - used to select all elements (that are children of the target - the object before the dot) with the specified tag name
 - querySelector() and querySelectorAll - used to select one or more elements by CSS selector
-- the properties (meaning you don’t have () after them): parentNode, previousSibling, nextSibling, firstChild, lastChild
+- the properties (meaning you don’t have () after them): parentNode, previousElementSibling, nextElementSibling, firstElementChild, lastElementChild
 
 If your result is more than one element (such as when using getElementsByTagName()) then you need to use a for loop to look at or do something with each individual item.  
 
@@ -43,6 +43,10 @@ You can also use array notation to access individual items.  Note:  Before using
 para1 = paras[0];
 para2 = paras[1];
 ```
+
+## Adding to the DOM
+Getting the text in the right place is tricky.  We looked at the appendChild function in class to add something in as a child of another element.  This makes it the last child, at the bottom.  You won't want your "click on the items" text to be at the bottom of the browser.  So using the [insertBefore](http://www.w3schools.com/jsref/met_node_insertbefore.asp) method will be handy.  If you are having trouble with this, I encourage you to ask Google for help.  __BUT__ make sure you uderstand how the solution you find works.  There are *many*, *many* ways to get this done, but finding one is very likely *NOT* going to be obvious.
+
 
 ## DOM Access Practice
 Use the index.html file as the DOM to answer the following questions.  Put the answers in your pull-request comment.
