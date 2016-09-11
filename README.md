@@ -23,7 +23,7 @@ If you look at the HTML provided, you’ll see an image tag in the aside on line
 Remembering the following functions and properties will help you navigate the DOM:
 
 - getElementById() - used to select a single element by its id attribute
-- getElementsByTagName() - used to select all elements (that are children of the target - the object before the dot) with the specified tag name
+- getElementsByTagName() - used to select all elements (that are children of the target - the object before the dot) with the specified tag name __REMEMBER__: This always, always gives you back an array.  It may have one item, but it is an array with one item in it.  This is different than the result of getElementById().
 - querySelector() and querySelectorAll - used to select one or more elements by CSS selector
 - the properties (meaning you don’t have () after them): parentNode, previousElementSibling, nextElementSibling, firstElementChild, lastElementChild
 
