@@ -73,7 +73,7 @@ document.getElementById("submit")
 
 
 ## Adding to the DOM
-Getting the text in the right place is tricky.  We looked at the appendChild function in class to add something in as a child of another element.  This makes it the last child, at the bottom.  You won't want your "click on the items" text to be at the bottom of the browser.  So using the [insertBefore](http://www.w3schools.com/jsref/met_node_insertbefore.asp) method will be handy.  If you are having trouble with this, I encourage you to ask Google for help.  __BUT__ make sure you uderstand how the solution you find works.  There are *many*, *many* ways to get this done, but finding one is very likely *NOT* going to be obvious.
+Getting the text in the right place is tricky.  We looked at the appendChild function in class to add something in as a child of another element.  This makes it the last child, at the bottom.  You won't want your "click on the items" text to be at the bottom of the browser.  So using the [insertBefore](http://www.w3schools.com/jsref/met_node_insertbefore.asp) method will be handy.  If you are having trouble with this, I encourage you to ask Google for help.  __BUT__ make sure you understand how the solution you find works.  Remember there are *many*, *many* ways to get this done.
 
 
 ## DOM Access Practice
