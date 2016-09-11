@@ -47,14 +47,15 @@ para2 = paras[1];
 ## DOM Access Practice
 Use the index.html file as the DOM to answer the following questions.  Put the answers in your pull-request comment.
 
-1. Which JavaScript function is most appropriate to select the aside element on line 13, the getElementsByTagName() function or the getElementById() function?
+1. Which JavaScript function is most appropriate to select the aside element on line 13, the getElementsByTagName() function or the getElementById() function?  getElementsByTagName();
 
-2. Which function is most appropriate to select the img element on line 14?
+2. Which function is most appropriate to select the img element on line 15?  getElementById(),  var asideImage = document.getElementById("aside-image");.
 
-3. How would you select all of the items with the menu-item class?
 
-4. How would you select all of the list item elements?
+3. How would you select all of the items with the menu-item class? document.getElementsByClassName("menu-item");
 
-5. Assuming that you had a list item element, how would you get the menu-item that is inside the list item?  How would you get the image inside that list item?
+4. How would you select all of the list item elements? getElementsByTagName();
 
-6. How would you select only the list item elements in the div under the Bakery Goods header?  (Hint: think about the answer to question 5.)
+5. Assuming that you had a list item element, how would you get the menu-item that is inside the list item?  How would you get the image inside that list item? getElementsByTagName("li").FirstChild;
+
+6. How would you select only the list item elements in the div under the Bakery Goods header?  (Hint: think about the answer to question 5.) selectByID("bakery").nextSibling, next variable would target the first child.nextSibling 
