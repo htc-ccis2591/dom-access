@@ -89,4 +89,4 @@ Use the index.html file as the DOM to answer the following questions.  Put the a
 
 5. Assuming that you had a list item element, how would you get the menu-item that is inside the list item?  How would you get the image inside that list item?
 
-6. How would you select only the list item elements in the div under the Bakery Goods header?  (Hint: think about the answer to question 5.)
+6. How would you select only the list item elements in the div under the Bakery Goods header?  (using multiples step is OK.)
