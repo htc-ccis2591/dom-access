@@ -81,7 +81,7 @@ Use the index.html file as the DOM to answer the following questions.  Put the a
 
 1. Which JavaScript function is most appropriate to select the aside element on line 13, the getElementsByTagName() function or the getElementById() function?
 
-2. Which function is most appropriate to select the img element on line 14?
+2. Which function is most appropriate to select the img element on line 15?
 
 3. How would you select all of the items with the menu-item class?
 
