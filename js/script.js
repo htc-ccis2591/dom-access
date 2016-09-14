@@ -33,12 +33,13 @@ var showImg = function () {
     for (i; i < menuItems.length; i++){
         menuItems[i].addEventListener("click", function() {
             var click = this;
-            var img = click.getElementsByTagName("img");
+            var span = click.getElementsByTagName("span");
             var sideImg = document.getElementById("aside-image");
-            var imgSource = img.getAttribute("src");
+            var imgSource = span.nextElementSibling.getAttribute("src");
             
-            sideImg.setAttribute("src", "source");
-            sideImg.setAttribute("class", "");
+            sideImg.removeAttribute("hide");
+            sideImg.setAttribute("src", "imgSource");
+            
         });
     }
 
