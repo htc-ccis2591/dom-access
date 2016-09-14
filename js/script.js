@@ -7,15 +7,36 @@ menuElement[0].appendChild(menuNav);
 menuNav.appendChild(menuContext);
 
 //Hiding Images
-var imgDiv = document.createAttribute("div");
-var menuImages = document.getElementsByTagName("img");
-var hideAttribute = document.createAttribute("hide");
-hideAttribute.value = 'hide';
+var hideImg = function () {
+   var menuImages = document.getElementsByTagName("img");
+    //add forloop with below
+    for (i = 0; i < menuImages.length; i++)
+        {
+            current = menuImages[i];
+            current.setAttribute("class", "hide");
+  
+        }
+    
+}
+
+hideImg();
+
+/*var imgDiv = document.createAttribute("div");
+
+var img = document.images;
 
 
-menuImages[1].setAttributeNode(hideAttribute);
+hideAttribute.value = "hide";
+
+imgDiv.appendChild(menuImages[1]);
+
+menuImages[1].setAttributeNode(hideAttribute);*/
 
 
 //var hideMenuImages = function (){
 //    document.getElementsByTagName("img").style.visibility = "hidden";
 //}
+
+
+
+//Jordan Code
