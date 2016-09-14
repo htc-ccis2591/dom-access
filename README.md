@@ -19,13 +19,13 @@ For this assignment, the object is to transform the page with JavaScript, alteri
 
 If you look at the HTML provided, you’ll see an image tag in the aside on line 14.  This is the image that displays on the right side.  You can show one of the menu item images by filling in the appropriate value for the src attribute.  That value comes from the corresponding “hidden” image in the menu list.
 
-# DOM Access Review
+## DOM Access Review
 Remembering the following functions and properties will help you navigate the DOM:
 
 - getElementById() - used to select a single element by its id attribute
-- getElementsByTagName() - used to select all elements (that are children of the target - the object before the dot) with the specified tag name
+- getElementsByTagName() - used to select all elements (that are children of the target - the object before the dot) with the specified tag name. __REMEMBER__: This always, always gives you back an array.  It may have one item, but it is an array with one item in it.  This is different than the result of getElementById().
 - querySelector() and querySelectorAll - used to select one or more elements by CSS selector
-- the properties (meaning you don’t have () after them): parentNode, previousSibling, nextSibling, firstChild, lastChild
+- the properties (meaning you don’t have () after them): parentNode, previousElementSibling, nextElementSibling, firstElementChild, lastElementChild
 
 If your result is more than one element (such as when using getElementsByTagName()) then you need to use a for loop to look at or do something with each individual item.  
 
@@ -44,6 +44,38 @@ para1 = paras[0];
 para2 = paras[1];
 ```
 
+## Event Handlers
+We looked at two ways to add events to objects:
+
+Setting the property:
+```
+document.getElementById("submit").onclick = 
+   function() {
+      alert("The button was clicked!");
+      
+      // You can see which thing was clicked by using this
+      // this = the element clicked on
+      console.log(this);
+   };
+```
+
+With an event listener:
+```
+document.getElementById("submit")
+.addEventListener( "click", function() {
+      alert("The button was clicked!");
+      
+      // You can see which thing was clicked by using this
+      // this = the element clicked on
+      console.log(this);
+   });
+```   
+
+
+## Adding to the DOM
+Getting the text in the right place is tricky.  We looked at the appendChild function in class to add something in as a child of another element.  This makes it the last child, at the bottom.  You won't want your "click on the items" text to be at the bottom of the browser.  So using the [insertBefore](http://www.w3schools.com/jsref/met_node_insertbefore.asp) method will be handy.  If you are having trouble with this, I encourage you to ask Google for help.  __BUT__ make sure you understand how the solution you find works.  Remember there are *many*, *many* ways to get this done.
+
+
 ## DOM Access Practice
 Use the index.html file as the DOM to answer the following questions.  Put the answers in your pull-request comment.
 
@@ -57,4 +89,4 @@ Use the index.html file as the DOM to answer the following questions.  Put the a
 
 5. Assuming that you had a list item element, how would you get the menu-item that is inside the list item?  How would you get the image inside that list item?
 
-6. How would you select only the list item elements in the div under the Bakery Goods header?  (Hint: think about the answer to question 5.)
+6. How would you select only the list item elements in the div under the Bakery Goods header?  (using multiples step is OK.)
